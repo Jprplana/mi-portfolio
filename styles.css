@@ -1,0 +1,49 @@
+.navbar {
+    height: 64px;
+}
+
+.navbar-brand-left {
+    position: absolute;
+    height: 64px;
+    width: auto;
+    left: 15px;
+    background-size: auto;
+    padding-top: 0.4rem;
+}
+
+.navbar-brand-right {
+    position: absolute;
+    height: 64px;
+    width: 275px;
+    right: 0px;
+    background-size: auto;
+    padding-top: 0.9rem;
+    padding-right: 0%;
+}
+
+#argprog-logo {
+    height: 55px;
+}
+
+#inti-logo {
+    height: 55px;
+}
+
+#ig-logo {
+    height: 35px;
+}
+
+#tw-logo {
+    height: 35px;
+    padding-top: 0.1rem;
+}
+
+#lnkdin-logo {
+    height: 25px;
+    padding-left: 0.2rem;
+}
+
+#login-btn {
+    margin-left: 15%;
+    padding: .375rem 1.5rem;
+}
