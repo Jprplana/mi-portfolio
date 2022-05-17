@@ -53,12 +53,22 @@
   padding: 0.375rem 1.5rem;
 }
 
-.primary-card {
+.card {
   margin: 11px;
   border-radius: 20px;
-  overflow: hidden;
+  border-style: solid;
   border-width: 1px;
-  border-color: blueviolet;
+  border-color: gray;
+}
+
+.card-header {
+  font-size: large;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+#primary-card {
+  overflow: hidden;
 }
 
 .banner {
@@ -70,19 +80,21 @@
 #foto-perfil {
   height: 200px;
   width: 200px;
-  top: 400px;
-  left: 50px;
-  position: absolute;
+  top: 320px;
+  left: 200px;
+  position: relative;
   filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.7));
-  rotate: -10deg;
+  transform: rotate(-5deg);
 }
 
 .card-body {
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .card-title {
   font-weight: 600;
+  max-width: max-content;
 }
 
 .logos-edu-banner {
@@ -107,4 +119,71 @@
   max-height: 20px;
   width: auto;
   margin-top: 15px;
+}
+
+#btn-edicion {
+  float: right;
+  opacity: 50%;
+}
+
+#btn-edicion-perfil {
+  position: inherit;
+  opacity: 50%;
+  float: inline-end;
+  margin-left: 2rem;
+}
+
+.icono-suma {
+  float: right;
+  opacity: 50%;
+}
+
+.trash-bin {
+  float: right;
+  opacity: 50%;
+  padding-left: 1%;
+}
+
+.lapiz-edicion {
+  float: right;
+}
+
+.laboral-card-body {
+  max-width: 85%;
+  padding-left: 5%;
+  float: left;
+}
+
+.pack-edicion-skills {
+  display: flex;
+  left: 40%;
+  position: absolute;
+}
+
+.img-laboral {
+  float: left;
+}
+
+.picture-laboral {
+  max-height: 100px;
+  width: auto;
+}
+
+#skills-group {
+  margin-left: 10%;
+}
+
+.skill-card {
+  align-items: center;
+  padding-top: 10%;
+}
+
+.skill-card-body {
+  padding-top: 10%;
+  padding-bottom: 30%;
+}
+
+.card-img-top {
+  height: 170px;
+  width: auto;
 }
