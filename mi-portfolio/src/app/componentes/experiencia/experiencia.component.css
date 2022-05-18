@@ -1,0 +1,14 @@
+.laboral-card-body {
+  max-width: 85%;
+  padding-left: 5%;
+  float: left;
+}
+
+.img-laboral {
+  float: left;
+}
+
+.picture-laboral {
+  max-height: 100px;
+  width: auto;
+}
