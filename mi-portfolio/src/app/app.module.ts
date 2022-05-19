@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { NgCircleProgressModule } from 'ng-circle-progress';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './componentes/header/header.component';
@@ -20,6 +22,7 @@ import { PriCardLeftComponent } from './componentes/primary-card/pri-card-foot/p
 import { PriCardRightComponent } from './componentes/primary-card/pri-card-foot/pri-card-right/pri-card-right.component';
 import { ProfileComponent } from './componentes/primary-card/pri-card-foot/pri-card-left/profile/profile.component';
 import { AddSectionsComponent } from './componentes/primary-card/pri-card-foot/pri-card-left/add-sections/add-sections.component';
+
 
 @NgModule({
   declarations: [
@@ -44,7 +47,8 @@ import { AddSectionsComponent } from './componentes/primary-card/pri-card-foot/p
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgCircleProgressModule.forRoot({})
   ],
   providers: [],
   bootstrap: [AppComponent]
