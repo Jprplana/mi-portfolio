@@ -15,9 +15,11 @@ import { LogosAPComponent } from './componentes/header/logos-ap/logos-ap.compone
 import { LoginComponent } from './componentes/header/login/login.component';
 import { NavRightComponent } from './componentes/header/nav-right/nav-right.component';
 import { BannerComponent } from './componentes/primary-card/banner/banner.component';
-import { LogosBannerComponent } from './componentes/primary-card/logos-banner/logos-banner.component';
-import { ProfileComponent } from './componentes/primary-card/profile/profile.component';
-import { AddSectionsComponent } from './componentes/primary-card/add-sections/add-sections.component';
+import { PriCardFootComponent } from './componentes/primary-card/pri-card-foot/pri-card-foot.component';
+import { PriCardLeftComponent } from './componentes/primary-card/pri-card-foot/pri-card-left/pri-card-left.component';
+import { PriCardRightComponent } from './componentes/primary-card/pri-card-foot/pri-card-right/pri-card-right.component';
+import { ProfileComponent } from './componentes/primary-card/pri-card-foot/pri-card-left/profile/profile.component';
+import { AddSectionsComponent } from './componentes/primary-card/pri-card-foot/pri-card-left/add-sections/add-sections.component';
 
 @NgModule({
   declarations: [
@@ -34,9 +36,11 @@ import { AddSectionsComponent } from './componentes/primary-card/add-sections/ad
     LoginComponent,
     NavRightComponent,
     BannerComponent,
-    LogosBannerComponent,
+    PriCardFootComponent,
+    PriCardLeftComponent,
+    PriCardRightComponent,
     ProfileComponent,
-    AddSectionsComponent
+    AddSectionsComponent,
   ],
   imports: [
     BrowserModule,
