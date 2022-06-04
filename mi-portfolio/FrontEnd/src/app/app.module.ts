@@ -22,6 +22,7 @@ import { PriCardLeftComponent } from './componentes/primary-card/pri-card-foot/p
 import { PriCardRightComponent } from './componentes/primary-card/pri-card-foot/pri-card-right/pri-card-right.component';
 import { ProfileComponent } from './componentes/primary-card/pri-card-foot/pri-card-left/profile/profile.component';
 import { AddSectionsComponent } from './componentes/primary-card/pri-card-foot/pri-card-left/add-sections/add-sections.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -48,7 +49,8 @@ import { AddSectionsComponent } from './componentes/primary-card/pri-card-foot/p
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
