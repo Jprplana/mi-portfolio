@@ -23,6 +23,7 @@ import { PriCardRightComponent } from './componentes/primary-card/pri-card-foot/
 import { ProfileComponent } from './componentes/primary-card/pri-card-foot/pri-card-left/profile/profile.component';
 import { AddSectionsComponent } from './componentes/primary-card/pri-card-foot/pri-card-left/add-sections/add-sections.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './componentes/home/home.component';
 
 
 @NgModule({
@@ -45,6 +46,7 @@ import { HttpClientModule } from '@angular/common/http';
     PriCardRightComponent,
     ProfileComponent,
     AddSectionsComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
