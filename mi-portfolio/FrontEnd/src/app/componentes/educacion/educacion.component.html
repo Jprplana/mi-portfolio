@@ -1,0 +1,62 @@
+<div class="card" id="educacion-card">
+  <div class="card-header">
+    Educación
+    <div class="icono-suma">
+      <a href="#" id="btn-suma"
+        ><img
+          src="/assets/img/plus icon black.png"
+          alt="Agregar"
+          height="12px"
+          width="auto"
+      /></a>
+    </div>
+
+    <div class="col-lg-2">
+      <button
+        type="button"
+        class="btn btn-dark"
+        routerLink="/nuevaedu"
+        *ngIf="isLogged"
+      >
+        Nueva Educación
+      </button>
+    </div>
+  </div>
+
+  <div class="col-lg-1"></div>
+  <div class="col-lg-11">
+    <table class="table">
+      <tbody>
+        <tr *ngFor="let Educacion of educacion">
+          <td>
+            <h5>{{ Educacion.nombreE }}</h5>
+          </td>
+          <td>{{ Educacion.descripcionE }}</td>
+          <td *ngIf="isLogged">
+            <button
+              class="edit-button"
+              routerLink="/editedu/{{ Educacion.id }}"
+            >
+              <img
+                src="/assets/img/edit-pencil-black.png"
+                alt="Editar"
+                height="20px"
+                width="auto"
+              />
+            </button>
+          </td>
+          <td *ngIf="isLogged">
+            <button class="delete-button" (click)="delete(Educacion.id)">
+              <img
+                src="/assets/img/garbage-bin-garbage-can-garbage-container-trash-bin-trash-can-icon-431304.jpg"
+                alt="Eliminar"
+                height="20px"
+                width="auto"
+              />
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
