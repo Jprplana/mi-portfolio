@@ -1,37 +1,25 @@
-package com.miportfolio.jp.Entity;
+package com.miportfolio.jp.Dto;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.validation.constraints.NotBlank;
 
-@Entity
-public class Experiencia {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+
+public class dtoExperiencia {
+    @NotBlank
     private String nombreE;
+    @NotBlank
     private String descripcionE;
     
     //Constructors
 
-    public Experiencia() {
+    public dtoExperiencia() {
     }
 
-    public Experiencia(String nombreE, String descripcionE) {
+    public dtoExperiencia(String nombreE, String descripcionE) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
     }
     
-    
     //Gets & Sets
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getNombreE() {
         return nombreE;

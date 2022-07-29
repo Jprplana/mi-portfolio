@@ -1,6 +1,6 @@
 <div class="card" id="experiencia-card">
   <div class="card-header">
-    Experiencia
+    Experiencia laboral
     <div class="icono-suma">
       <a href="#" id="btn-suma"
         ><img
@@ -10,8 +10,20 @@
           width="auto"
       /></a>
     </div>
+
+    <div class="col-lg-2">
+      <button
+        type="button"
+        class="btn btn-dark"
+        routerLink="/nuevaexp"
+        *ngIf="isLogged"
+      >
+        Nueva Experiencia
+      </button>
+    </div>
   </div>
-  <!--EXPERIENCIA 1-->
+  <!--
+  EXPERIENCIA 1
   <div class="exp-laboral">
     <div class="img-laboral">
       <img
@@ -56,7 +68,7 @@
     </div>
   </div>
 
-  <!--EXPERIENCIA 2-->
+  EXPERIENCIA 2
   <div class="exp-laboral">
     <div class="img-laboral">
       <img
@@ -100,7 +112,7 @@
       </div>
     </div>
   </div>
-  <!--EXPERIENCIA 3-->
+  EXPERIENCIA 3
   <div class="exp-laboral">
     <div class="img-laboral img-fluid">
       <img
@@ -144,5 +156,42 @@
     </div>
     </div>
 
+  </div>
+-->
+  <div class="col-lg-1"></div>
+  <div class="col-lg-11">
+    <table class="table">
+      <tbody>
+        <tr *ngFor="let Experiencia of expe">
+          <td>
+            <h5>{{ Experiencia.nombreE }}</h5>
+          </td>
+          <td>{{ Experiencia.descripcionE }}</td>
+          <td *ngIf="isLogged">
+            <button
+              class="edit-button"
+              routerLink="/editexp/{{ Experiencia.id }}"
+            >
+              <img
+                src="/assets/img/edit-pencil-black.png"
+                alt="Editar"
+                height="20px"
+                width="auto"
+              />
+            </button>
+          </td>
+          <td *ngIf="isLogged">
+            <button class="delete-button" (click)="delete(Experiencia.id)">
+              <img
+                src="/assets/img/garbage-bin-garbage-can-garbage-container-trash-bin-trash-can-icon-431304.jpg"
+                alt="Eliminar"
+                height="20px"
+                width="auto"
+              />
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>
