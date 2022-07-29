@@ -55,17 +55,17 @@ import { EditExperienciaComponent } from './componentes/experiencia/edit-experie
     AddSectionsComponent,
     HomeComponent,
     NewExperienciaComponent,
-    EditExperienciaComponent,
+    EditExperienciaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
-    FormsModule,
+    FormsModule
   ],
   providers: [
-    interceptorProvider,
+    interceptorProvider
   ],
   bootstrap: [AppComponent]
 })
