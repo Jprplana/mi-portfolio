@@ -14,7 +14,8 @@ import { ProyectosComponent } from './componentes/proyectos/proyectos.component'
 import { FooterComponent } from './componentes/footer/footer.component';
 import { RedesComponent } from './componentes/header/redes/redes.component';
 import { LogosAPComponent } from './componentes/header/logos-ap/logos-ap.component';
-import { LoginComponent } from './componentes/header/login/login.component';
+import { LoginComponent } from './componentes/login/login.component';
+import { LoginbuttonComponent } from './componentes/header/loginbutton/loginbutton.component';
 import { NavRightComponent } from './componentes/header/nav-right/nav-right.component';
 import { BannerComponent } from './componentes/primary-card/banner/banner.component';
 import { PriCardFootComponent } from './componentes/primary-card/pri-card-foot/pri-card-foot.component';
@@ -22,6 +23,13 @@ import { PriCardLeftComponent } from './componentes/primary-card/pri-card-foot/p
 import { PriCardRightComponent } from './componentes/primary-card/pri-card-foot/pri-card-right/pri-card-right.component';
 import { ProfileComponent } from './componentes/primary-card/pri-card-foot/pri-card-left/profile/profile.component';
 import { AddSectionsComponent } from './componentes/primary-card/pri-card-foot/pri-card-left/add-sections/add-sections.component';
+import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './componentes/home/home.component';
+import { FormsModule } from '@angular/forms';
+import { interceptorProvider } from './service/interceptor-service';
+import { NewExperienciaComponent } from './componentes/experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './componentes/experiencia/edit-experiencia.component';
+
 
 
 @NgModule({
@@ -37,6 +45,7 @@ import { AddSectionsComponent } from './componentes/primary-card/pri-card-foot/p
     RedesComponent,
     LogosAPComponent,
     LoginComponent,
+    LoginbuttonComponent,
     NavRightComponent,
     BannerComponent,
     PriCardFootComponent,
@@ -44,13 +53,20 @@ import { AddSectionsComponent } from './componentes/primary-card/pri-card-foot/p
     PriCardRightComponent,
     ProfileComponent,
     AddSectionsComponent,
+    HomeComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
+    HttpClientModule,
+    FormsModule,
   ],
-  providers: [],
+  providers: [
+    interceptorProvider,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
