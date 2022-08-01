@@ -1,9 +1,12 @@
 <div class="container" *ngIf="educacion">
+  <div class="titulo-edicion"><h3>Editar Educación</h3></div>
+
+
   <div class="row">
     <div>
       <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
         <div class="form-group">
-          <label for="nombreE">Nombre de la institución</label>
+          <label for="nombreE"><h5>Nombre de la institución educativa</h5></label>
           <input
             type="text"
             class="form-control"
@@ -14,7 +17,7 @@
           />
         </div>
         <div class="form-group">
-          <label for="descripcionE">Descripción de sus estudios</label>
+          <label for="descripcionE"><h5>Nombre de la carrera o curso</h5></label>
           <input
             type="text"
             class="form-control"
@@ -25,7 +28,7 @@
           />
         </div>
 
-        <button class="btn btn-primary">Agregar educación</button>
+        <button class="btn btn-secondary" style="margin: 15px;">Confirmar edición</button>
       </form>
     </div>
   </div>

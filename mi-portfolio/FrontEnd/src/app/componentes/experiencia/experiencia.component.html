@@ -2,164 +2,24 @@
   <div class="card-header">
     Experiencia laboral
     <div class="icono-suma">
-      <a href="#" id="btn-suma"
-        ><img
-          src="/assets/img/plus icon black.png"
-          alt="Agregar"
-          height="12px"
-          width="auto"
-      /></a>
-    </div>
-
-    <div class="col-lg-2">
       <button
         type="button"
-        class="btn btn-dark"
+        class="btn btn-light"
         routerLink="/nuevaexp"
         *ngIf="isLogged"
       >
-        Nueva Experiencia
+        <img
+          src="/assets/img/plus icon black.png"
+          alt="Agregar experiencia"
+          height="12px"
+          width="auto"
+        />
       </button>
     </div>
   </div>
-  <!--
-  EXPERIENCIA 1
-  <div class="exp-laboral">
-    <div class="img-laboral">
-      <img
-        id="img-exp1"
-        class="picture-laboral"
-        src="/assets/img/ministerio-de-energia-y-mineria.png"
-        alt="Nombre alternativo"
-      />
-    </div>
-    <div class="laboral-card-body">
-      <div class="card-text-laboral">
-        <h5>Data Entry y Atención al público</h5>
-        <p class="fecha-txt">Enero 2016 a Diciembre 2017 - 2 años</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-          nobis eaque quod repellat ipsa inventore sunt ipsum, accusantium atque
-          possimus perferendis ad voluptas eum corporis? Quidem autem dolorem
-          rem excepturi. Lorem ipsum dolor sit amet consectetur adipisicing
-          elit.
-        </p>
-      </div>
-      <div class="pack-edicion-laboral">
-        <div class="trash-bin">
-          <a href="#" id="btn-eliminar"
-            ><img
-              src="/assets/img/garbage-bin-garbage-can-garbage-container-trash-bin-trash-can-icon-431304.jpg"
-              alt="Eliminar"
-              height="20px"
-              width="auto"
-          /></a>
-        </div>
-        <div class="lapiz-edicion">
-          <a href="#" id="btn-edicion"
-            ><img
-              src="/assets/img/edit-pencil-black.png"
-              alt="Editar"
-              height="20px"
-              width="auto"
-          /></a>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  EXPERIENCIA 2
-  <div class="exp-laboral">
-    <div class="img-laboral">
-      <img
-        id="img-exp2"
-        class="picture-laboral"
-        src="/assets/img/logo-ministerio-2014-transparente.png"
-        alt="Nombre alternativo"
-      />
-    </div>
-    <div class="laboral-card-body">
-      <div class="card-text-laboral">
-        <h5>Asesor en Prensa y Comunicación / Editor Audiovisual</h5>
-        <p class="fecha-txt">Noviembre 2007 a Diciembre 2015 - 8 años</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-          nobis eaque quod repellat ipsa inventore sunt ipsum, accusantium atque
-          possimus perferendis ad voluptas eum corporis? Quidem autem dolorem
-          rem excepturi. Lorem ipsum dolor sit amet consectetur adipisicing
-          elit.
-        </p>
-      </div>
-      <div class="pack-edicion-laboral">
-        <div class="trash-bin">
-          <a href="#" id="btn-eliminar"
-            ><img
-              src="/assets/img/garbage-bin-garbage-can-garbage-container-trash-bin-trash-can-icon-431304.jpg"
-              alt="Eliminar"
-              height="20px"
-              width="auto"
-          /></a>
-        </div>
-        <div class="lapiz-edicion">
-          <a href="#" id="btn-edicion"
-            ><img
-              src="/assets/img/edit-pencil-black.png"
-              alt="Editar"
-              height="20px"
-              width="auto"
-          /></a>
-        </div>
-      </div>
-    </div>
-  </div>
-  EXPERIENCIA 3
-  <div class="exp-laboral">
-    <div class="img-laboral img-fluid">
-      <img
-        id="img-exp3"
-        class="picture-laboral"
-        src="/assets/img/idcard-logo-copia.png"
-        alt="Nombre alternativo"
-      />
-    </div>
-    <div class="laboral-card-body">
-      <div class="card-text-laboral">
-        <h5>Encargado de Servicio Técnico y Producción</h5>
-        <p class="fecha-txt">Agosto 2004 a Diciembre 2006 - 2 años y 4 meses</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
-          nobis eaque quod repellat ipsa inventore sunt ipsum, accusantium atque
-          possimus perferendis ad voluptas eum corporis? Quidem autem dolorem
-          rem excepturi. Lorem ipsum dolor sit amet consectetur adipisicing
-          elit.
-        </p>
-      </div>
-      <div class="pack-edicion-laboral">
-      <div class="trash-bin">
-        <a href="#" id="btn-eliminar"
-          ><img
-            src="/assets/img/garbage-bin-garbage-can-garbage-container-trash-bin-trash-can-icon-431304.jpg"
-            alt="Eliminar"
-            height="20px"
-            width="auto"
-        /></a>
-      </div>
-      <div class="lapiz-edicion">
-        <a href="#" id="btn-edicion"
-          ><img
-            src="/assets/img/edit-pencil-black.png"
-            alt="Editar"
-            height="20px"
-            width="auto"
-        /></a>
-      </div>
-    </div>
-    </div>
-
-  </div>
--->
   <div class="col-lg-1"></div>
-  <div class="col-lg-11">
+  <div class="col-lg-11 tabla-experiencia">
     <table class="table">
       <tbody>
         <tr *ngFor="let Experiencia of expe">
@@ -169,24 +29,26 @@
           <td>{{ Experiencia.descripcionE }}</td>
           <td *ngIf="isLogged">
             <button
-              class="edit-button"
+              class="btn btn-light"
               routerLink="/editexp/{{ Experiencia.id }}"
             >
               <img
                 src="/assets/img/edit-pencil-black.png"
-                alt="Editar"
+                alt="Editar experiencia"
                 height="20px"
                 width="auto"
+                style="opacity: 50%"
               />
             </button>
           </td>
           <td *ngIf="isLogged">
-            <button class="delete-button" (click)="delete(Experiencia.id)">
+            <button class="btn btn-light" (click)="delete(Experiencia.id)">
               <img
                 src="/assets/img/garbage-bin-garbage-can-garbage-container-trash-bin-trash-can-icon-431304.jpg"
-                alt="Eliminar"
+                alt="Eliminar experiencia"
                 height="20px"
                 width="auto"
+                style="opacity: 50%"
               />
             </button>
           </td>
