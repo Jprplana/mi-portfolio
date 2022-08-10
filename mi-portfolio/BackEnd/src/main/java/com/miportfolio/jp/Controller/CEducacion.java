@@ -3,7 +3,7 @@ package com.miportfolio.jp.Controller;
 import com.miportfolio.jp.Dto.dtoEducacion;
 import com.miportfolio.jp.Entity.Educacion;
 import com.miportfolio.jp.Security.Controller.Mensaje;
-import com.miportfolio.jp.Security.SEducacion;
+import com.miportfolio.jp.Service.SEducacion;
 import java.util.List;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/educacion")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://miportfoliojpfront.web.app/")
 public class CEducacion {
     @Autowired
     SEducacion sEducacion;

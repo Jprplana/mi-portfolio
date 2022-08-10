@@ -1,4 +1,4 @@
-package com.miportfolio.jp.Security;
+package com.miportfolio.jp.Service;
 
 import com.miportfolio.jp.Entity.Educacion;
 import com.miportfolio.jp.Repository.REducacion;
