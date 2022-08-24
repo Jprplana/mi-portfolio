@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -cp target/classes:target/dependency/* com.miportfolio.jp.PortfoliojpApplication
+web: java -jar target/jp-0.0.1-SNAPSHOT.jar
