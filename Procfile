@@ -1,1 +1,1 @@
-web: java -cp target/classes/:target/dependency/* com.miportfolio.jp.PortfoliojpApplication
+web: java -cp target/classes/;target/dependency/* mi-portfolio.BackEnd.src.main.java.com.miportfolio.jp.PortfoliojpApplication
